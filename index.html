@@ -109,6 +109,9 @@
                     } else {
                         showMessage('Failed to send message. Please try again.', 'error');
                     }
+                } catch (error) {
+                    showMessage('Network error. Please check your connection and try again.', 'error');
+                }
                 // Reset button
                 submitBtn.textContent = 'Send Message';
                 submitBtn.disabled = false;
