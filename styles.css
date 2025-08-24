@@ -18,37 +18,63 @@ body {
     overflow-x: hidden;
     padding-top: 80px; /* Account for fixed navbar */
 }
+
+/* Social Links Section */
 .social-links {
-  margin-top: 15px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+    margin-top: 30px;
+    text-align: center;
 }
 
-.social-links a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #333;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.social-links h3 {
+    color: #232f3e;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.social-links a i {
-  font-size: 22px;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-/* Hover Effects */
-.social-links a.linkedin:hover {
-  color: #0077b5; /* LinkedIn Blue */
-  transform: scale(1.1);
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #687078;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
 }
 
-.social-links a.blog:hover {
-  color: #27ae60; /* Green for Blog */
-  transform: scale(1.1);
+.social-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon i {
+    font-size: 20px;
+}
+
+/* LinkedIn specific hover */
+.social-icon[href*="linkedin"]:hover {
+    color: #0077b5;
+    border-color: #0077b5;
+    background: rgba(0, 119, 181, 0.1);
+}
+
+/* Blog/Hashnode specific hover */
+.social-icon[href*="hashnode"]:hover {
+    color: #2962ff;
+    border-color: #2962ff;
+    background: rgba(41, 98, 255, 0.1);
 }
 
 
@@ -536,64 +562,6 @@ footer {
         font-size: 24px;
     }
 }
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-link {
-    color: #232f3e;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
-    position: relative;
-}
-
-.nav-link:hover {
-    color: #7877c6;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #7877c6;
-    transition: width 0.2s ease;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background: #232f3e;
-    margin: 3px 0;
-    transition: 0.3s;
-}
-
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-}
 
 /* Background gradient */
 body::before {
@@ -883,9 +851,10 @@ body::before {
     border-radius: 12px;
     font-size: 12px;
     font-weight: 500;
+    white-space: nowrap;
 }
 
-.project-status:contains("In Progress") {
+.project-status.in-progress {
     background: #f59e0b;
 }
 
@@ -1042,7 +1011,7 @@ body::before {
     transform: translateY(-1px);
 }
 
-/* Mobile Navigation */
+/* Mobile responsive adjustments */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -1135,37 +1104,16 @@ body::before {
     .about-section h3, .skills-section h3, .projects-section h3, .aws-journey h3, .contact-form h3 {
         font-size: 24px;
     }
-        .social-links {
-            text-align: center;
-            padding: 2rem 0;
-        }
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 1rem;
-        }
+    /* Mobile social links */
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
 
-        .social-icon {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-decoration: none;
-            color: #333;
-            transition: transform 0.2s;
-        }
-
-        .social-icon:hover {
-            transform: translateY(-5px);
-        }
-
-        .social-icon img {
-            width: 40px;
-            height: 40px;
-            margin-bottom: 0.5rem;
-        }
-
-        .social-icon span {
-            font-size: 0.9rem;
-        }
+    .social-icon {
+        width: 200px;
+        justify-content: center;
+    }
+}
