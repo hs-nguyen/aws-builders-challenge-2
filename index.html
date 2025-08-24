@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">        
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,16 +23,7 @@
                     <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
                     <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
@@ -46,67 +42,20 @@
         <section id="home" class="hero">
             <img src="image.jpg" alt="Nguyen Sang" class="profile-photo">
             <h1>Nguyen Sang</h1>
-            <p class="tagline">Nguyen Sang - AWS First Cloud Journey</p>
-            <p class="hero-description">Passionate about building scalable cloud solutions and exploring the endless possibilities of AWS services</p>
-            <div class="hero-buttons">
-                <a href="https://builder.aws.com/community/@nguyensangscom" target="_blank" class="aws-link">AWS Builder Profile</a>
-                <a href="https://hs-nguyen.hashnode.dev" target="_blank" class="blog-link">Technical Blogs</a>
+            <p class="tagline">AWS First Cloud Journey</p>
+        <section class="social-links">
+            <h3>Connect With Me</h3>
+            <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nguyen-huu-sang/" target="_blank" class="social-icon">
+                <img src="linkedin-icon.svg" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://hs-nguyen.hashnode.dev" target="_blank" class="social-icon">
+                <img src="hashnode-icon.svg" alt="Technical Blog">
+                <span>Technical Blog</span>
+            </a>
             </div>
-        </section>
-
         <!-- About Section -->
-        <section id="about" class="about-section">
-            <h3>About Me</h3>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate cloud developer currently participating in the AWS Builder Challenge, where I'm expanding my knowledge of cloud architecture and modern web development practices.</p>
-                    <p>My journey in cloud computing started with curiosity about scalable solutions, and now I'm actively building projects that leverage AWS services like S3, CloudFront, Lambda, and Amplify.</p>
-                    <p>When I'm not coding, I enjoy exploring new AWS services, contributing to the developer community, and sharing my learning experiences with fellow builders.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <h4>5+</h4>
-                        <p>AWS Services Used</p>
-                    </div>
-                    <div class="stat-item">
-                        <h4>3+</h4>
-                        <p>Projects Completed</p>
-                    </div>
-                    <div class="stat-item">
-                        <h4>1</h4>
-                        <p>Builder Challenge</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section">
-            <h3>Technical Skills</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>☁️ Cloud Platforms</h4>
-                    <div class="skill-items">
-                        <span class="skill-tag">Amazon Web Services (AWS)</span>
-                        <span class="skill-tag">AWS S3</span>
-                        <span class="skill-tag">CloudFront</span>
-                        <span class="skill-tag">AWS Lambda</span>
-                        <span class="skill-tag">AWS Amplify</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4>🛠️ Tools & Technologies</h4>
-                    <div class="skill-items">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">AWS CLI</span>
-                        <span class="skill-tag">CloudFormation</span>
-                        <span class="skill-tag">Serverless</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Enhanced Projects Section -->
         <section id="projects" class="projects-section">
             <h3> Projects List</h3>
@@ -114,37 +63,25 @@
                 <div class="project-card featured">
                     <div class="project-header">
                         <h4>🌐 Deploy a 3-Tier Architecture Web App on AWS: A Complete Tutorial </h4>
-                        <a href="https://hs-nguyen.hashnode.dev" target="_blank" class="blog-link">Technical Blogs</a>                                                <heft class="project-status in-progress">In Progress</span>
                         <span class="project-status">Live</span>
                     </div>
                     <p></p>
-                    <div class="project-highlights">
-                        <div class="highlight">✨ Responsive Design</div>
-                        <div class="highlight">⚡ Fast Loading</div>
-                        <div class="highlight">📱 Mobile Optimized</div>
-                    </div>
                     <div class="project-tech">
-                        <span class="tech-tag">HTML/CSS</span>
                         <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">AWS S3</span>
-                        <span class="tech-tag">CloudFront</span>
+                        <span class="tech-tag">Applicaion Load Balancer</span>
+                        <span class="tech-tag">RDS</span>
+                        <span class="tech-tag">Route 53</span>
+                        <span class="tech-tag">Certifica Manager</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link primary">Live Demo</a>
-                        <a href="#" class="project-link">Source Code</a>
+                        <a href="https://hs-nguyen.hashnode.dev/deploy-a-3-tier-architecture-web-app-on-aws-a-complete-tutorial" class="project-link primary">Visit</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <h4>📧 Serverless Contact Form</h4>
+                        <h4>📧 Use EC2-Private to access S3 buckets cross-region</h4>
                         <span class="project-status">Live</span>
-                    </div>
-                    <p>A serverless contact form using AWS Lambda for backend processing, with email notifications and form validation. Demonstrates modern serverless architecture and API integration patterns.</p>
-                    <div class="project-highlights">
-                        <div class="highlight">🚀 Serverless</div>
-                        <div class="highlight">📨 Email Integration</div>
-                        <div class="highlight">🔒 Form Validation</div>
                     </div>
                     <div class="project-tech">
                         <span class="tech-tag">AWS Lambda</span>
@@ -153,8 +90,7 @@
                         <span class="tech-tag">JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="#contact" class="project-link primary">Try It Out</a>
-                        <a href="#" class="project-link">Learn More</a>
+                        <a href="https://hs-nguyen.hashnode.dev/use-ec2-private-to-access-s3-buckets-cross-region" class="project-link primary">Visit</a>
                     </div>
                 </div>
 
@@ -183,24 +119,19 @@
 
                 <div class="project-card">
                     <div class="project-header">
-                        <h4>🎨 Responsive Web Components</h4>
+                        <h4>🎨 Step-by-Step Guide to Creating and Launching a High-Availability Web App on AWS with Docker ECS and EC2</h4>
                         <span class="project-status">Completed</span>
                     </div>
-                    <p>A collection of reusable web components built with modern CSS techniques including Flexbox, Grid, and custom properties. Focuses on accessibility and cross-browser compatibility.</p>
-                    <div class="project-highlights">
-                        <div class="highlight">♿ Accessible</div>
-                        <div class="highlight">🔄 Reusable</div>
-                        <div class="highlight">🎯 Modern CSS</div>
-                    </div>
                     <div class="project-tech">
-                        <span class="tech-tag">CSS Grid</span>
-                        <span class="tech-tag">Flexbox</span>
-                        <span class="tech-tag">Accessibility</span>
-                        <span class="tech-tag">Components</span>
+                        <span class="tech-tag">VPC</span>
+                        <span class="tech-tag">Elastic container service</span>
+                        <span class="tech-tag">Elastic container registry</span>
+                        <span class="tech-tag">Application Load Balancer</span>
+                        <span class="tech-tag">Route 53</span>
+                        <span class="tech-tag">Certifica Manager</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link primary">View Components</a>
-                        <a href="#" class="project-link">Documentation</a>
+                        <a href="https://hs-nguyen.hashnode.dev/step-by-step-guide-to-creating-and-launching-a-high-availability-web-app-on-aws-with-docker-ecs-and-ec2" class="project-link primary">Visit</a>
                     </div>
                 </div>
             </div>
