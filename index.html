@@ -3,42 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyen Sang - Personal Website</title>
+    <title>Nguyen Sang - Cloud Developer & AWS Enthusiast</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Nguyen Sang</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
     <main>
-        <section class="hero">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
             <img src="image.jpg" alt="Nguyen Sang" class="profile-photo">
             <h1>Nguyen Sang</h1>
-            <p class="tagline"> Testing CI/CD with Amplify </p>
-            <a href="https://builder.aws.com/community/@nguyensangscom" target="_blank" class="aws-link">AWS Builder Center Profile</a>
+            <p class="tagline">Cloud Developer & AWS Enthusiast</p>
+            <p class="hero-description">Passionate about building scalable cloud solutions and exploring the endless possibilities of AWS services</p>
+            <div class="hero-buttons">
+                <a href="https://builder.aws.com/community/@nguyensangscom" target="_blank" class="aws-link">AWS Builder Profile</a>
+                <a href="#contact" class="cta-button">Get In Touch</a>
+            </div>
         </section>
 
-        <section class="fun-facts">
-            <h3>Fun Facts About Me</h3>
-            <div class="facts-grid">
-                <div class="fact-card">
-                    <h4>🚀 Challenge In Progress</h4>
-                    <p>Currently working on <a href="https://builder.aws.com/content/31C2WxIDSQive7q2Dv5xNFCmYJj/aws-builder-challenge-2-build-a-website-on-the-cloud?trk=86c76c09-e8f4-4138-badc-604ce7bc5d77&sc_channel=el" target="_blank">AWS Builder Challenge #2: Build a website on the cloud!</a></p>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h3>About Me</h3>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate cloud developer currently participating in the AWS Builder Challenge, where I'm expanding my knowledge of cloud architecture and modern web development practices.</p>
+                    <p>My journey in cloud computing started with curiosity about scalable solutions, and now I'm actively building projects that leverage AWS services like S3, CloudFront, Lambda, and Amplify.</p>
+                    <p>When I'm not coding, I enjoy exploring new AWS services, contributing to the developer community, and sharing my learning experiences with fellow builders.</p>
                 </div>
-                <div class="fact-card">
-                    <h4>🎯 Learning Goal</h4>
-                    <p>Learning and develop in the feauture</p>
-                </div>
-                <div class="fact-card">
-                    <h4>💡 Fun Project</h4>
-                    <p>This website is hosted on Amazon S3 with CloudFront for global delivery!</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h4>5+</h4>
+                        <p>AWS Services Used</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>3+</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>1</h4>
+                        <p>Builder Challenge</p>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>☁️ Cloud Platforms</h4>
+                    <div class="skill-items">
+                        <span class="skill-tag">Amazon Web Services (AWS)</span>
+                        <span class="skill-tag">AWS S3</span>
+                        <span class="skill-tag">CloudFront</span>
+                        <span class="skill-tag">AWS Lambda</span>
+                        <span class="skill-tag">AWS Amplify</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>💻 Frontend Development</h4>
+                    <div class="skill-items">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Web Performance</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>🛠️ Tools & Technologies</h4>
+                    <div class="skill-items">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">AWS CLI</span>
+                        <span class="skill-tag">CloudFormation</span>
+                        <span class="skill-tag">Serverless</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <h3>Professional Experience</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h4>AWS Builder Challenge Participant</h4>
+                        <p class="company">Amazon Web Services Community</p>
+                        <ul class="experience-details">
+                            <li>Participating in AWS Builder Challenge #2, focusing on cloud-native web development</li>
+                            <li>Building scalable web applications using AWS services (S3, CloudFront, Lambda)</li>
+                            <li>Learning infrastructure as code and serverless architecture patterns</li>
+                            <li>Contributing to the AWS builder community through knowledge sharing</li>
+                        </ul>
+                        <div class="experience-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">S3</span>
+                            <span class="tech-tag">CloudFront</span>
+                            <span class="tech-tag">Lambda</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h4>Cloud Development Learning Path</h4>
+                        <p class="company">Self-Directed Learning</p>
+                        <ul class="experience-details">
+                            <li>Completed comprehensive cloud computing fundamentals courses</li>
+                            <li>Built multiple web applications using modern frontend technologies</li>
+                            <li>Gained hands-on experience with version control and deployment workflows</li>
+                            <li>Developed understanding of responsive design and web accessibility</li>
+                        </ul>
+                        <div class="experience-tech">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">Web Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Projects Section -->
+        <section id="projects" class="projects-section">
+            <h3>Featured Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h4>🌐 Personal Portfolio Website</h4>
+                        <span class="project-status">Live</span>
+                    </div>
+                    <p>A responsive portfolio website built with HTML, CSS, and JavaScript, hosted on AWS S3 with CloudFront CDN for global delivery and optimal performance. Features include smooth navigation, contact form integration, and mobile-first design.</p>
+                    <div class="project-highlights">
+                        <div class="highlight">✨ Responsive Design</div>
+                        <div class="highlight">⚡ Fast Loading</div>
+                        <div class="highlight">📱 Mobile Optimized</div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">AWS S3</span>
+                        <span class="tech-tag">CloudFront</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link primary">Live Demo</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>📧 Serverless Contact Form</h4>
+                        <span class="project-status">Live</span>
+                    </div>
+                    <p>A serverless contact form using AWS Lambda for backend processing, with email notifications and form validation. Demonstrates modern serverless architecture and API integration patterns.</p>
+                    <div class="project-highlights">
+                        <div class="highlight">🚀 Serverless</div>
+                        <div class="highlight">📨 Email Integration</div>
+                        <div class="highlight">🔒 Form Validation</div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">AWS Lambda</span>
+                        <span class="tech-tag">API Gateway</span>
+                        <span class="tech-tag">SES</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#contact" class="project-link primary">Try It Out</a>
+                        <a href="#" class="project-link">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>🚀 AWS Builder Challenge</h4>
+                        <span class="project-status in-progress">In Progress</span>
+                    </div>
+                    <p>Participating in AWS Builder Challenge #2, learning cloud architecture patterns and implementing best practices for web hosting on AWS. Building practical skills in cloud-native development.</p>
+                    <div class="project-highlights">
+                        <div class="highlight">🎯 Hands-on Learning</div>
+                        <div class="highlight">☁️ Cloud Architecture</div>
+                        <div class="highlight">🏆 Community Challenge</div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Cloud Architecture</span>
+                        <span class="tech-tag">Best Practices</span>
+                        <span class="tech-tag">Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://builder.aws.com/content/31C2WxIDSQive7q2Dv5xNFCmYJj/aws-builder-challenge-2-build-a-website-on-the-cloud?trk=86c76c09-e8f4-4138-badc-604ce7bc5d77&sc_channel=el" target="_blank" class="project-link primary">View Challenge</a>
+                        <a href="https://builder.aws.com/community/@nguyensangscom" target="_blank" class="project-link">My Profile</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>🎨 Responsive Web Components</h4>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <p>A collection of reusable web components built with modern CSS techniques including Flexbox, Grid, and custom properties. Focuses on accessibility and cross-browser compatibility.</p>
+                    <div class="project-highlights">
+                        <div class="highlight">♿ Accessible</div>
+                        <div class="highlight">🔄 Reusable</div>
+                        <div class="highlight">🎯 Modern CSS</div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">CSS Grid</span>
+                        <span class="tech-tag">Flexbox</span>
+                        <span class="tech-tag">Accessibility</span>
+                        <span class="tech-tag">Components</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link primary">View Components</a>
+                        <a href="#" class="project-link">Documentation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AWS Journey Section -->
         <section class="aws-journey">
-            <h3>AWS Builder Challenge #2</h3>
-            <p>I'm currently working on the "Build a website on the cloud" challenge, learning to deploy websites using AWS S3 and CloudFront. This site is part of my challenge progress!</p>
+            <h3>My AWS Learning Journey</h3>
+            <p>Currently participating in AWS Builder Challenge #2, where I'm learning to build and deploy websites using AWS services. This portfolio showcases my progress and the practical skills I'm developing in cloud computing.</p>
+            <div class="journey-highlights">
+                <div class="highlight-item">
+                    <span class="highlight-icon">🏗️</span>
+                    <h4>Building</h4>
+                    <p>Creating scalable web applications</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon">📚</span>
+                    <h4>Learning</h4>
+                    <p>Exploring AWS services and best practices</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon">🤝</span>
+                    <h4>Sharing</h4>
+                    <p>Contributing to the builder community</p>
+                </div>
+            </div>
             <a href="https://builder.aws.com/content/31C2WxIDSQive7q2Dv5xNFCmYJj/aws-builder-challenge-2-build-a-website-on-the-cloud?trk=86c76c09-e8f4-4138-badc-604ce7bc5d77&sc_channel=el" target="_blank" class="cta-button">View Challenge Details</a>
         </section>
-        <section class="contact-form">
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="contact-form">
             <h3>Get In Touch</h3>
             <p>Have a question or want to connect? Send me a message!</p>
             <!-- Form message container for success/error messages -->
@@ -61,15 +309,43 @@
                 <button type="submit" class="contact-submit-btn">Send Message</button>
             </form>
         </section>
-        <!-- END CONTACT FORM SECTION -->
     </main>
 
     <footer>
         <p>&copy; 2025 Nguyen Sang. Built with ❤️ on AWS</p>
     </footer>
     
-    <!-- Contact Form JavaScript -->
+    <!-- JavaScript for Navigation and Contact Form -->
     <script>
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
         // Contact form handler - Sends form data to AWS Lambda
         const LAMBDA_URL = 'https://e2usm4afqrm3rnwls2sqwn7iki0buyyh.lambda-url.ap-southeast-1.on.aws/'; // Replace with your Function URL
         
